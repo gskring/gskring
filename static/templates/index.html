@@ -18,13 +18,10 @@ has_interests -%}
     </div>
 
     <nav>
-      <a href="/u/{{ m.id }}/frame.html" title="{{ m.main_link.title }}"
-        >www</a
-      >
+      <a href="/u/{{ m.id }}/frame.html" title="{{ m.main_link.title }}">www</a>
       {%- if m.has_main_feed -%}
       <a href="{{ m.main_feed.url.url }}" title="{{ m.main_feed.title }}"
-        >feed</a
-      >
+      >feed</a>
       {%- endif -%}
     </nav>
   </div>

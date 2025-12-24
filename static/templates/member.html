@@ -19,8 +19,7 @@
       <div class="link-list">
         <div>
           <a href="{{ member.main_link.url.url }}"
-            >{{ member.main_link.title }}</a
-          >
+          >{{ member.main_link.title }}</a>
         </div>
         {%- for link in member.additional_links -%}
         <div><a href="{{ link.url.url }}">{{ link.title }}</a></div>
@@ -33,8 +32,7 @@
       <div class="link-list">
         <div>
           <a href="{{ member.main_feed.url.url }}"
-            >{{ member.main_feed.title }}</a
-          >
+          >{{ member.main_feed.title }}</a>
         </div>
         {%- for link in member.additional_feeds -%}
         <div><a href="{{ link.url.url }}">{{ link.title }}</a></div>

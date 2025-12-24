@@ -1,9 +1,9 @@
-> [!WARNING]  
-> This project uses a [developing version of
-> YOCaml](https://gitlab.com/funkywork/yocaml) (to experiment with its
-> expressiveness), so it is naturally also experimental and, above all, **work
-> in progress** (and usable for the moment, but check back regularly to see how
-> things are progressing :D).
+> [!WARNING]\
+> This project uses a
+> [developing version of YOCaml](https://gitlab.com/funkywork/yocaml) (to
+> experiment with its expressiveness), so it is naturally also experimental and,
+> above all, **work in progress** (and usable for the moment, but check back
+> regularly to see how things are progressing :D).
 
 # ring.muhokama.fun
 
@@ -16,25 +16,25 @@
 > freely) inspired by [webring de Merveilles](https://webring.xxiivv.com/)
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+
 **Table of Contents**
 
 - [ring.muhokama.fun](#ringmuhokamafun)
-    - [Contribute to the content of the webring](#contribute-to-the-content-of-the-webring)
-        - [Join the chain](#join-the-chain)
-            - [Creating your identity](#creating-your-identity)
-            - [Adding the identity to the chain](#adding-the-identity-to-the-chain)
-            - [Linking the webring on your website](#linking-the-webring-on-your-website)
-        - [Area of interest](#area-of-interest)
-        - [Participation in the federated blog](#participation-in-the-federated-blog)
-    - [Contribute to the generator](#contribute-to-the-generator)
-        - [Setting up the development environment](#setting-up-the-development-environment)
-    - [Run the binary `ring.exe`](#run-the-binary-ringexe)
-    - [Launching tests](#launching-tests)
-    - [Project updates](#project-updates)
-    - [Generating documentation locally](#generating-documentation-locally)
+  - [Contribute to the content of the webring](#contribute-to-the-content-of-the-webring)
+    - [Join the chain](#join-the-chain)
+      - [Creating your identity](#creating-your-identity)
+      - [Adding the identity to the chain](#adding-the-identity-to-the-chain)
+      - [Linking the webring on your website](#linking-the-webring-on-your-website)
+    - [Area of interest](#area-of-interest)
+    - [Participation in the federated blog](#participation-in-the-federated-blog)
+  - [Contribute to the generator](#contribute-to-the-generator)
+    - [Setting up the development environment](#setting-up-the-development-environment)
+  - [Run the binary `ring.exe`](#run-the-binary-ringexe)
+  - [Launching tests](#launching-tests)
+  - [Project updates](#project-updates)
+  - [Generating documentation locally](#generating-documentation-locally)
 
 <!-- markdown-toc end -->
-
 
 ## Contribute to the content of the webring
 
@@ -55,7 +55,7 @@ main_link:
   url: your-website-url
 ```
 
-> [!WARNING]  
+> [!WARNING]\
 > Your id must have the same value as the file name (without the extension).
 
 Here's a slightly more expansive example that takes advantage of default
@@ -93,9 +93,9 @@ that this data will be used, for example, to build profile pages.
 
 Now that your identity has been created, you need to add it to the chain. To do
 this, simply add your id to the [data/chain.yml](data/chain.yml) file, and
-you're done! You can refers to [Setting up the development
-environment](#setting-up-the-development-environment) in order to test locally
-your addition.
+you're done! You can refers to
+[Setting up the development environment](#setting-up-the-development-environment)
+in order to test locally your addition.
 
 #### Linking the webring on your website
 
@@ -108,13 +108,13 @@ dedicated links:
   previous member of the web ring
 - `https://ring.muhokama.fun/u/<YOUR-IDENT>/succ` which redirects to the next
   member of the web ring
-  
-An example that could be seen on your page would be: 
+
+An example that could be seen on your page would be:
 
 ```html
-Hey, this site is part of 
+Hey, this site is part of
 <a href="https://ring.muhokama.fun">ring.muhokama.fun!</a><br />
-<a href="https://ring.muhokama.fun/u/<YOUR-IDENT>/pred">Previous</a> 
+<a href="https://ring.muhokama.fun/u/<YOUR-IDENT>/pred">Previous</a>
 | <a href="https://ring.muhokama.fun/u/<YOUR-IDENT>/succ">Next</a>
 ```
 
@@ -134,8 +134,6 @@ article lives in the [/data/articles](data/articles) directory and if you are
 part of the ring, you can add your articles freely. Imported items are
 referenced in the [ring's Atom feed](https://ring.muhokama.fun/atom.xml).
 
-
-
 ## Contribute to the generator
 
 The Webring is a project that uses version 2 of
@@ -143,6 +141,7 @@ The Webring is a project that uses version 2 of
 [OCaml](https://ocaml.org), which is very flexible and fun.
 
 The project is divided into five parts:
+
 - `lib/` contains the library code used to describe the generator. This is where
   all the webring's logic is to be found. (The library is called `Gem` (_because
   I have a dubious sense of humour_)
@@ -158,11 +157,11 @@ The project is divided into five parts:
 ### Setting up the development environment
 
 To work, we assume that a version greater than or equal to `2.2.0~beta1` of
-[OPAM](https://opam.ocaml.org) is installed on your machine ([Install
-OPAM](https://opam.ocaml.org/doc/Install.html), [upgrade to version
-`2.2.0~xxxx`](https://opam.ocaml.org/blog/opam-2-2-0-beta2/#Try-it)).
+[OPAM](https://opam.ocaml.org) is installed on your machine
+([Install OPAM](https://opam.ocaml.org/doc/Install.html),
+[upgrade to version `2.2.0~xxxx`](https://opam.ocaml.org/blog/opam-2-2-0-beta2/#Try-it)).
 
-> [!TIP]  
+> [!TIP]\
 > We're relying on version `2.2.x` to support the `dev-setup` flag, which allows
 > development dependencies to be packaged, making it very practical to install
 > locally all the elements needed to create a pleasant development environment.
@@ -184,7 +183,6 @@ project in `bin/`. YOCaml and its various plugins will be accessible in the
 scope of this directory. The setup should work with Vim and Emacs (if they are
 configured to work with OCaml) and with any editor configured to use LSP (Merlin
 and OCaml-lsp-server being development dependencies of the project).
-
 
 ## Run the binary `ring.exe`
 
@@ -251,4 +249,3 @@ dune build @doc-new
 The doc will be generated in the following directory:
 `_build/default/_doc_new/html/docs/index.html` (with
 [Sherlodoc](https://doc.sherlocode.com/) for easy search by type).
-
