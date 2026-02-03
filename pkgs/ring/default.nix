@@ -46,8 +46,7 @@ buildDunePackage (finalAttrs: {
   buildPhase = ''
     runHook preBuild
     dune build -p ${finalAttrs.pname} ''${enableParallelBuilding:+-j $NIX_BUILD_CORES}
-    dune exec ./main.exe
-    deno fmt _build/www
+    dune exec ./bin/ring.exe -- build
     runHook postBuild
   '';
 
@@ -55,7 +54,7 @@ buildDunePackage (finalAttrs: {
     runHook preInstall
     dune install --prefix $out --libdir $OCAMLFIND_DESTDIR ${finalAttrs.pname}
     mkdir -p $out/var/www/html
-    cp -r _build/www/* $out/var/www/html/
+    cp -r _www/* $out/var/www/html/
     runHook postInstall
   '';
 })
