@@ -1,0 +1,9 @@
+id: aniva
+display_name: Leni Aniva
+main_link:
+  url: https://leni.sh
+additional_links:
+  - title: Codeberg
+    url: https://codeberg.org/aniva
+  - title: GitHub
+    url: https://github.com/lenianiva
