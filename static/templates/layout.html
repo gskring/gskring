@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     {%- if has_description -%}
     <meta name="description" content="{{ description }}" />
@@ -15,13 +16,14 @@
     <header>
       <div class="container">
         <h1 class="logo">
-          <a href="/">ring.<span>muhokama</span>.fun</a> {%- if has_sub_path -%}
+          <a href="/">ring.<span>muhokama</span>.fun</a>
+          {%- if has_sub_path -%}
           <span class="sub-path">{{ sub_path }}</span>
           {%- endif -%}
         </h1>
-        <div>
-          <nav><a href="/blog.html">Federated blog</a></nav>
-        </div>
+        <nav>
+          <a href="/blog.html">Federated blog</a>
+        </nav>
       </div>
     </header>
     <main>
