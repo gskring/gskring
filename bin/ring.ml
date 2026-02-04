@@ -40,7 +40,7 @@ let port_conv =
         match int_of_string_opt str with
         | None -> Result.error (str ^ " is not a valid port value")
         | Some x when x < 0 -> Result.error (str ^ " is < 0")
-        | Some x when x > 9999 -> Result.error (str ^ " is > 9999")
+        | Some x when x > 65535 -> Result.error (str ^ " is > 65535")
         | Some x -> Result.ok x)
     , fun ppf -> Format.fprintf ppf "%04d" )
 ;;
