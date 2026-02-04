@@ -1,354 +1,385 @@
 :root {
-    --main-light-color: #f0f0f0;
-    --main-dark-color: #111111;
-    --main-contrast-dark-color: #052520;
-    --main-contrast-light-color: #3aac97;
+  --main-light-color: #f0f0f0;
+  --main-dark-color: #111111;
+  --main-contrast-dark-color: #052520;
+  --main-contrast-light-color: #3aac97;
 }
 
 body {
-    min-height: 100vh;
-    color: var(--main-light-color);
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-dark-color);
-    min-height: 100dvh;
+  min-height: 100vh;
+  color: var(--main-light-color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-dark-color);
+  min-height: 100dvh;
 }
 
 a {
-    color: var(--main-contrast-light-color);
+  color: var(--main-contrast-light-color);
 }
 
 p {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 header {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 header h1 {
-    font-size: 280%;
+  font-size: 280%;
 }
 
 .logo a {
-    text-decoration: none;
-    color: var(--main-light-color);
+  text-decoration: none;
+  color: var(--main-light-color);
 }
 
 .logo span {
-    color: var(--main-contrast-light-color);
+  color: var(--main-contrast-light-color);
 }
 
 .logo span.sub-path {
-    font-weight: 200;
-    color: var(--main-light-color);
+  font-weight: 200;
+  color: var(--main-light-color);
 }
 
 .logo span.sub-path::before {
-    content: "/u/";
-    color: var(--main-contrast-light-color);
+  content: "/u/";
+  color: var(--main-contrast-light-color);
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 footer {
-    color: var(--main-light-color);
-    font-family: "Inter";
-    padding: 32px 0;
+  color: var(--main-light-color);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  padding: 32px 0;
 }
 
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 footer p {
-    font-size: 80%;
-    margin: 0;
+  font-size: 80%;
+  margin: 0;
 }
 
 .container {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 32px 12px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px 12px;
 }
 
 header > .container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 header > .container > h1 {
-    flex: 1;
+  flex: 1;
 }
 
 .button,
 header > .container nav > a {
-    font-family: "Inter";
-    text-decoration: none;
-    background-color: var(--main-contrast-dark-color);
-    padding: 4px 12px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  text-decoration: none;
+  background-color: var(--main-contrast-dark-color);
+  padding: 4px 12px;
 }
 
 header > .container nav > a {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 .members {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin: 68px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin: 68px 0;
 }
 
 .members > div {
-    border-left: 6px solid var(--main-contrast-light-color);
-    background-color: var(--main-contrast-dark-color);
-    padding: 8px;
-    font-family: "Inter";
-    font-size: 80%;
-    text-decoration: none;
-    color: var(--main-contrast-light-color);
+  border-left: 6px solid var(--main-contrast-light-color);
+  background-color: var(--main-contrast-dark-color);
+  padding: 8px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  font-size: 80%;
+  text-decoration: none;
+  color: var(--main-contrast-light-color);
 }
 
 .members > div > div {
-    margin-bottom: 12px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .members > div > div > h2 {
-    font-weight: 600;
-    font-size: 100%;
-    flex: 1;
+  font-weight: 600;
+  font-size: 100%;
+  flex: 1;
 }
 
 .members > div > div > span {
-    text-transform: uppercase;
-    font-weight: 200;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 .members > div > nav {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .members > div > nav > a {
-    text-decoration: none;
-    background-color: var(--main-dark-color);
-    padding: 0 6px;
-    font-size: 80%;
+  text-decoration: none;
+  background-color: var(--main-dark-color);
+  padding: 0 6px;
+  font-size: 80%;
 }
 
 .no-elts {
-    color: var(--main-contrast-light-color);
-    border-left: 8px solid var(--main-contrast-dark-color);
-    padding: 32px;
-    margin: 64px 0;
-    font-family: "Inria Serif";
-    font-size: 180%;
+  color: var(--main-contrast-light-color);
+  border-left: 8px solid var(--main-contrast-dark-color);
+  padding: 32px;
+  margin: 64px 0;
+  font-family:
+    "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman",
+    "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 180%;
 }
 
 .member {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
 }
 
 .member > div:first-child {
-    flex: 1;
+  flex: 1;
 }
 
 .member > div:last-child {
-    flex: 4;
+  flex: 4;
 }
 
 .member section {
-    margin-top: 64px;
-    font-family: "Inter";
+  margin-top: 64px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
 }
 
 .member h2 {
-    font-weight: 400;
-    margin-bottom: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .member .link-list {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 .member .link-list > div {
-    background-color: var(--main-contrast-dark-color);
-    padding: 4px 12px;
-    font-size: 80%;
+  background-color: var(--main-contrast-dark-color);
+  padding: 4px 12px;
+  font-size: 80%;
 }
 
 .member nav > div > a,
 .member .link-list > div > a {
-    text-decoration: none;
-    font-weight: 300;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .member nav {
-    display: flex;
-    background-color: var(--main-contrast-dark-color);
-    font-family: "Inter";
-    flex-direction: row;
+  display: flex;
+  background-color: var(--main-contrast-dark-color);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  flex-direction: row;
 }
 
 .member nav > div {
-    flex: 1;
-    padding: 4px 8px;
+  flex: 1;
+  padding: 4px 8px;
 }
 
 .member nav > div:last-child {
-    text-align: right;
+  text-align: right;
 }
 
 section.articles {
-    margin-top: 64px;
-    font-size: 90%;
-    padding-bottom: 32px;
+  margin-top: 64px;
+  font-size: 90%;
+  padding-bottom: 32px;
 }
 
 section.articles article {
-    border-bottom: 4px solid var(--main-contrast-dark-color);
-    padding-bottom: 32px;
-    margin-bottom: 32px;
+  border-bottom: 4px solid var(--main-contrast-dark-color);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 section.articles article:last-child {
-    border-bottom-color: transparent;
+  border-bottom-color: transparent;
 }
 
 section.articles .lang > span {
-    margin-bottom: 12px;
-    background-color: var(--main-contrast-dark-color);
-    padding: 4px 12px;
-    display: inline-block;
-    color: var(--main-contrast-light-color);
-    font-family: "Inter";
-    text-transform: uppercase;
+  margin-bottom: 12px;
+  background-color: var(--main-contrast-dark-color);
+  padding: 4px 12px;
+  display: inline-block;
+  color: var(--main-contrast-light-color);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  text-transform: uppercase;
 }
 
 section.articles .date span {
-    color: var(--main-contrast-light-color);
-    font-weight: 700;
-    font-family: "Inter";
+  color: var(--main-contrast-light-color);
+  font-weight: 700;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
 }
 
 section.articles .date a {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 section.articles h2 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 section.articles h2 > a {
-    text-decoration: none;
-    color: var(--main-light-color);
-    font-weight: 300;
+  text-decoration: none;
+  color: var(--main-light-color);
+  font-weight: 300;
 }
 
 section.articles p {
-    padding: 12px 0;
-    font-weight: 200;
+  padding: 12px 0;
+  font-weight: 200;
 }
 
 section.articles ul.tags {
-    padding: 0;
+  padding: 0;
 }
 
 section.articles ul.tags > li:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
+
 section.articles ul.tags > li {
-    list-style: none;
-    display: inline-block;
-    padding: 4px;
-    font-weight: 300;
-    font-family: "Inter";
+  list-style: none;
+  display: inline-block;
+  padding: 4px;
+  font-weight: 300;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
 }
 
 section.articles ul.tags > li::before {
-    content: "#";
-    color: var(--main-contrast-light-color);
+  content: "#";
+  color: var(--main-contrast-light-color);
 }
 
 footer nav {
-    margin-top: 32px;
-    font-size: 80%;
+  margin-top: 32px;
+  font-size: 80%;
 }
 
 @media all and (max-width: 1024px) {
-    .members {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media all and (orientation: portrait), @media all and (max-width: 820px) {
-    body {
-        font-size: 1.5rem;
-        line-height: 1.8;
-        line-height: calc(1em + 0.8rem);
-    }
+@media all and (orientation: portrait), all and (max-width: 820px) {
+  body {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    line-height: calc(1em + 0.8rem);
+  }
 
-    .members {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .members {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    header h1 {
-        line-height: 4rem;
-        margin-bottom: 32px;
-    }
+  header h1 {
+    line-height: 4rem;
+    margin-bottom: 32px;
+  }
 
-    .member {
-        flex-direction: column;
-    }
+  .member {
+    flex-direction: column;
+  }
 
-    .member .link-list {
-        flex-direction: column;
-    }
+  .member .link-list {
+    flex-direction: column;
+  }
 
-    .member img {
-        margin: 32px auto;
-    }
+  .member img {
+    margin: 32px auto;
+  }
 
-    header > .container {
-        flex-direction: column;
-    }
+  header > .container {
+    flex-direction: column;
+  }
 }
 
 div.frame {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  & aside {
+    font-family:
+      -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+      "helvetica neue", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+      sans-serif;
+    padding: 1.5rem;
+
+    & nav {
+      margin-top: 0.2rem;
+
+      & a {
+        display: inline-block;
+        margin-right: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  & > iframe {
     flex: 1;
-
-    & aside {
-        font-family: "Inter";
-        padding: 1.5rem;
-
-        & nav {
-            margin-top: 0.2rem;
-
-            & a {
-                display: inline-block;
-                margin-right: 1rem;
-                font-weight: 700;
-            }
-        }
-    }
-
-    & > iframe {
-        flex: 1;
-        background-color: #fff;
-    }
+    background-color: #fff;
+  }
 }

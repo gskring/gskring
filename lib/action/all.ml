@@ -15,7 +15,6 @@ let run (module R : Sigs.RESOLVER) () =
   let* () = init_message (module R) in
   let* cache, chain = Init.run (module R) in
   return cache
-  >>= Fonts.run (module R)
   >>= Css.run (module R)
   >>= Images.run (module R)
   >>= Articles.run (module R) chain
