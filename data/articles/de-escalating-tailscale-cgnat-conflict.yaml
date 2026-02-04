@@ -1,0 +1,13 @@
+title: De-escalating Tailscale CGNAT conflict
+synopsis: How to workaround Tailscale dropping the entire CGNAT range if you want to keep traffic to some addresses within CGNAT IPv4 range.
+date: 2025-11-01
+authors:
+  - ysun
+link:
+  url: https://ysun.co/tscgnat
+tags:
+  - bgp
+  - go
+  - networking
+  - nftables
+  - tailscale
