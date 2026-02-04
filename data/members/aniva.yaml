@@ -6,8 +6,13 @@ location: San Francisco Bay Area, California, U.S.
 avatar: "aniva.avif"
 main_link:
   url: https://leni.sh
+  lang: en
+main_feed:
+  url: https://leni.sh/rss.xml
 additional_links:
   - title: Codeberg
     url: https://codeberg.org/aniva
+  - title: Bluesky
+    url: https://bsky.app/profile/aniva.bsky.social
   - title: GitHub
     url: https://github.com/lenianiva
