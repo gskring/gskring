@@ -3,6 +3,6 @@ let run (module R : Sigs.RESOLVER) chain =
     R.Target.atom
     (let open Yocaml.Task in
      R.track_common_dependencies
-     >>> Yocaml.Pipeline.track_file R.Source.articles
-     >>> Model.Articles.atom chain R.Source.articles)
+     >>> Yocaml.Pipeline.track_file R.Source.entries
+     >>> Model.Articles.atom chain R.Source.entries)
 ;;

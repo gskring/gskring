@@ -11,11 +11,11 @@ module Make (R : Sigs.RESOLVABLE) = struct
     let templates = Path.(static / "templates")
     let template file = Path.(templates / file)
     let members = Path.(data / "members")
-    let articles = Path.(data / "articles")
+    let entries = Path.(data / "articles")
     let chain = Path.(data / "chain.yaml")
     let common_deps = [ binary; chain ]
     let index = Path.(data / "index.md")
-    let blog = Path.(data / "blog.md")
+    let articles = Path.(data / "articles.md")
     let static_images = Path.(static / "images")
     let avatars = Path.(data / "avatars")
   end
@@ -33,7 +33,7 @@ module Make (R : Sigs.RESOLVABLE) = struct
     let avatars = Path.(images / "avatars")
     let frame ~id = Path.(members / id / "frame.html")
     let member ~id = Path.(members / id / "index.html")
-    let blog = Path.(R.target / "blog.html")
+    let articles = Path.(R.target / "articles.html")
 
     let member_redirection ~id pred_or_succ =
       let target = Path.(members / id) in
