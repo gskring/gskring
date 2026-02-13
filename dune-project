@@ -5,15 +5,13 @@
 
 (name ring)
 (version dev)
-(source (github muhokama/ring))
+(source (github gskring/gskring))
 (license GPL-3.0-or-later)
 (authors "Xavier Van de Woestyne <xaviervdw@gmail.com>")
 (maintainers "Xavier Van de Woestyne <xaviervdw@gmail.com>")
 
 (package
   (name ring)
-  (synopsis "A dead-simple webring")
-  (description "A webring for fans of mechanics and functional programming")
   (depends
    ocaml
    cmdliner

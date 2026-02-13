@@ -63,10 +63,10 @@ let to_list = List.map (fun { pred; curr; succ } -> curr, (pred, succ))
 
 let ring_feed =
   Yocaml_syndication.Opml.subscription
-    ~title:"ring.muhokama.fun"
-    ~description:"federated blog of Muhokama webring"
-    ~html_url:"https://ring.muhokama.fun"
-    ~feed_url:"https://ring.muhokama.fun/atom.xml"
+    ~title:"gskr.ing"
+    ~description:"federated blog of gskr.ing webring"
+    ~html_url:"https://gskr.ing"
+    ~feed_url:"https://gskr.ing/atom.xml"
     ()
 ;;
 
@@ -74,7 +74,7 @@ let to_opml =
   let open Yocaml.Task in
   List.concat_map (fun { curr; _ } -> Member.to_outline curr)
   |>> lift (fun outlines -> ring_feed :: outlines)
-  >>> Yocaml_syndication.Opml.opml2_from ~title:"ring.muhokama.fun" ()
+  >>> Yocaml_syndication.Opml.opml2_from ~title:"gskr.ing" ()
 ;;
 
 let normalize_elt { pred; curr; succ } =

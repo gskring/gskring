@@ -1,14 +1,14 @@
 let init_message (module R : Sigs.RESOLVER) =
   Yocaml.Eff.logf
     ~level:`Debug
-    "ring.muhokama [source: `%a`, target: `%a`]"
+    "gskr.ing [source: `%a`, target: `%a`]"
     Yocaml.Path.pp
     R.source
     Yocaml.Path.pp
     R.target
 ;;
 
-let final_message _cache = Yocaml.Eff.log ~level:`Debug "ring.muhokama done"
+let final_message _cache = Yocaml.Eff.log ~level:`Debug "gskr.ing done"
 
 let run (module R : Sigs.RESOLVER) () =
   let open Yocaml.Eff in

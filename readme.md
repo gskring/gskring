@@ -1,4 +1,4 @@
-# ring.deeznuts.phd (will be changed soon)
+# gskr.ing
 
 Invitation only [webring](https://en.wikipedia.org/wiki/Webring) forked from
 [muhokama/ring](https://github.com/muhokama/ring).

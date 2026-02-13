@@ -46,10 +46,10 @@ let normalize { page; articles } =
 let atom chain path =
   let open Yocaml_syndication in
   let open Yocaml.Task in
-  let id = "https://ring.muhokama.fun/atom.xml" in
-  let title = Atom.text "ring.muhokama.fun" in
-  let subtitle = Atom.text "federated blog of Muhokama webring" in
-  let links = [ Atom.self id; Atom.link "https://ring.muhokama.fun" ] in
+  let id = "https://gskr.ing/atom.xml" in
+  let title = Atom.text "gskr.ing" in
+  let subtitle = Atom.text "federated blog of gskr.ing webring" in
+  let links = [ Atom.self id; Atom.link "https://gskr.ing" ] in
   let updated = Atom.updated_from_entries () in
   let authors = Chain.to_authors chain in
   fetch chain path

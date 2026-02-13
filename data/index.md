@@ -1,6 +1,6 @@
 ---
 page_title: Index
-description: The index of ring.muhokama.fun
+description: The index of gskr.ing
 interests:
   - title: Software Engineering
     url: https://en.wikipedia.org/wiki/Software_engineering
@@ -14,7 +14,7 @@ interests:
     url: https://ar.al/2020/08/07/what-is-the-small-web/
 ---
 
-Welcome to the [Muhokama](https://github.com/muhokama/) webring. A collection of
+Welcome to the [gskr.ing](https://github.com/gskring/) webring. A collection of
 **personal spaces** maintained by people _who share certain ideas or approaches
 to the Internet_. You can also retrieve **the list of RSS/Atom feeds**
 associated with the webring using the [following OPML file](/opml/ring.opml) or

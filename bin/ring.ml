@@ -91,13 +91,14 @@ let log_level_arg default =
 ;;
 
 let bug_report =
-  "The application's source code is published on <https://github.com/muhokama/ring>. \
-   Feel free to contribute or report bugs on <https://github.com/muhokama/ring/issues>."
+  "The application's source code is published on <https://github.com/gskring/gskring>. \
+   Feel free to contribute or report bugs on \
+   <https://github.com/gskring/gskring/issues>."
 ;;
 
 let description =
-  "ring.muhokama is free software that lets you build a static site that describes a \
-   webring, in homage to the webrings of the 1990s, a return to the small-web."
+  "gskr.ing is free software that lets you build a static site that describes a webring, \
+   in homage to the webrings of the 1990s, a return to the small-web."
 ;;
 
 let build =
@@ -128,7 +129,7 @@ let watch =
 ;;
 
 let index =
-  let doc = "ring.muhokama" in
+  let doc = "gskr.ing" in
   let man =
     [ `S Manpage.s_description; `P description; `S Manpage.s_bugs; `P bug_report ]
   in
