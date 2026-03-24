@@ -1,0 +1,11 @@
+title: Go Plan9 Memo, Speeding Up Calculations 450%
+synopsis: Simd support via Go assembly for parallel element-wise computations.
+date: 2024-10-28
+authors:
+  - pehringer
+link:
+  url: https://www.pehringer.net/go_plan9_memo
+tags:
+  - go
+  - simd
+  - assembly
