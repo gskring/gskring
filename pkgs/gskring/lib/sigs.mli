@@ -31,7 +31,6 @@ module type RESOLVER = sig
     val atom : Yocaml.Path.t
     val ring_opml : Yocaml.Path.t
     val index : Yocaml.Path.t
-    val images : Yocaml.Path.t
     val members : Yocaml.Path.t
     val member_redirection : id:string -> [ `Pred | `Succ ] -> Yocaml.Path.t
     val frame : id:string -> Yocaml.Path.t

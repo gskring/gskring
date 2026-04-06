@@ -27,11 +27,10 @@ module Make (R : Sigs.RESOLVABLE) = struct
     let members = Path.(R.target / "u")
     let css = Path.(R.target / "assets" / "style" / "tailwind.css")
     let index = Path.(R.target / "index.html")
-    let images = Path.(R.target / "images")
-    let avatars = Path.(images / "avatars")
+    let avatars = members
     let frame ~id = Path.(members / id / "frame.html")
     let member ~id = Path.(members / id / "index.html")
-    let articles = Path.(R.target / "articles.html")
+    let articles = Path.(R.target / "articles" / "index.html")
 
     let member_redirection ~id pred_or_succ =
       let target = Path.(members / id) in
