@@ -1,5 +1,5 @@
 { buildDunePackage
-, fetchFromGitHub
+, fetchzip
 , alcotest
 , base64
 , crowbar
@@ -18,13 +18,11 @@
 
 buildDunePackage (finalAttrs: {
   pname = "cohttp";
-  version = "6.1.1";
+  version = "6.2.1";
 
-  src = fetchFromGitHub {
-    owner = "mirage";
-    repo = "ocaml-cohttp";
-    tag = "v${finalAttrs.version}";
-    hash = "sha256-KtGEztKU9vZi0mGP1pJCSZSSrbqgpWVFAuogoUc3KdI=";
+  src = fetchzip {
+    url = "https://github.com/mirage/ocaml-cohttp/releases/download/v${finalAttrs.version}/cohttp-${finalAttrs.version}.tbz";
+    hash = "sha256-ARJJriopBU3qm1D3KInEuue9k8T0KEfXZXsDExXoxr4=";
   };
 
   env.DUNE_CACHE = "disabled";
