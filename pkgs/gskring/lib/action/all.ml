@@ -13,9 +13,9 @@ let final_message _cache = Yocaml.Eff.log ~level:`Debug "gskr.ing done"
 let run (module R : Sigs.RESOLVER) () =
   let open Yocaml.Eff in
   let* () = init_message (module R) in
+  let* () = Css.run (module R) in
   let* cache, chain = Init.run (module R) in
   return cache
-  >>= Css.run (module R)
   >>= Images.run (module R)
   >>= Articles.run (module R) chain
   >>= Atom.run (module R) chain

@@ -1,0 +1,4 @@
+(executable
+ (name gskring)
+ (public_name gskring)
+ (libraries cmdliner yocaml yocaml_eio gskring))

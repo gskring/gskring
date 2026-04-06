@@ -8,9 +8,9 @@ let member (module R : Sigs.RESOLVER) pred_or_succ current_member target_member 
      R.track_common_dependencies
      >>> const target_member
      >>> empty_body ()
-     >>> Yocaml_jingoo.Pipeline.as_template
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Member)
-           (R.Source.template "redirect.html"))
+           (R.Source.template "redirect.liquid"))
 ;;
 
 let index (module R : Sigs.RESOLVER) current_member pred succ =
@@ -22,12 +22,12 @@ let index (module R : Sigs.RESOLVER) current_member pred succ =
      >>> Yocaml.Pipeline.track_file R.Source.members
      >>> Model.Member_page.from_member current_member pred succ
      >>> empty_body ()
-     >>> Yocaml_jingoo.Pipeline.as_template
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Member_page)
-           (R.Source.template "member.html")
-     >>> Yocaml_jingoo.Pipeline.as_template
+           (R.Source.template "member.liquid")
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Member_page)
-           (R.Source.template "layout.html"))
+           (R.Source.template "main.liquid"))
 ;;
 
 let frame (module R : Sigs.RESOLVER) curr pred succ =
@@ -39,9 +39,9 @@ let frame (module R : Sigs.RESOLVER) curr pred succ =
      >>> Yocaml.Pipeline.track_file R.Source.members
      >>> Model.Frame.init ~current:curr ~predecessor:pred ~successor:succ
      >>> empty_body ()
-     >>> Yocaml_jingoo.Pipeline.as_template
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Frame)
-           (R.Source.template "frame.html"))
+           (R.Source.template "frame.liquid"))
 ;;
 
 let run (module R : Sigs.RESOLVER) chain =

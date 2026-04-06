@@ -9,10 +9,10 @@ let run (module R : Sigs.RESOLVER) chain =
            R.Source.articles
      >>> Static.on_metadata @@ Model.Articles.index chain R.Source.entries
      >>> Yocaml_omd.content_to_html ()
-     >>> Yocaml_jingoo.Pipeline.as_template
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Articles)
-           (R.Source.template "articles.html")
-     >>> Yocaml_jingoo.Pipeline.as_template
+           (R.Source.template "articles.liquid")
+     >>> Yocaml_liquid.Pipeline.as_template
            (module Model.Articles)
-           (R.Source.template "layout.html"))
+           (R.Source.template "main.liquid"))
 ;;

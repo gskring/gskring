@@ -1,0 +1,7 @@
+(library
+ (name gskring)
+ (public_name gskring.lib)
+ (modules_without_implementation sigs)
+ (libraries yocaml yocaml_yaml yocaml_syndication yocaml_liquid yocaml_omd))
+
+(include_subdirs qualified)

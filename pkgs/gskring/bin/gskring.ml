@@ -1,16 +1,16 @@
 let run_build target source log_level =
   let module Resolver =
-    Gem.Resolver.Make (struct
+    Gskring.Resolver.Make (struct
       let source = source
       let target = target
     end)
   in
-  Yocaml_eio.run ~level:log_level (Gem.Action.All.run (module Resolver))
+  Yocaml_eio.run ~level:log_level (Gskring.Action.All.run (module Resolver))
 ;;
 
 let run_watch target source log_level port =
   let module Resolver =
-    Gem.Resolver.Make (struct
+    Gskring.Resolver.Make (struct
       let source = source
       let target = target
     end)
@@ -19,7 +19,7 @@ let run_watch target source log_level port =
     ~target:Resolver.target
     ~level:log_level
     ~port
-    (Gem.Action.All.run (module Resolver))
+    (Gskring.Action.All.run (module Resolver))
 ;;
 
 open Cmdliner
@@ -133,7 +133,7 @@ let index =
   let man =
     [ `S Manpage.s_description; `P description; `S Manpage.s_bugs; `P bug_report ]
   in
-  let info = Cmd.info "dune exec bin/ring.exe" ~version ~doc ~man in
+  let info = Cmd.info "gskring" ~version ~doc ~man in
   let default = Term.(ret (const (`Help (`Pager, None)))) in
   Cmd.group info ~default [ build; watch ]
 ;;
