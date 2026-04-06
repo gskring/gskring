@@ -2,6 +2,10 @@
 page_title: Index
 description: The index of gskr.ing
 interests:
+  - title: networking
+    url: https://www.kernel.org/doc/html/latest/networking/index.html
+  - title: systems
+    url: https://www.kernel.org
   - title: functional programming
     url: https://en.wikipedia.org/wiki/Functional_programming
   - title: type system
