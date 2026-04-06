@@ -21,12 +21,14 @@ buildDunePackage (finalAttrs: {
   src = with lib.fileset; toSource {
     root = ../../.;
     fileset = unions [
+      # generator
       ./bin
       ./lib
       ./dune-project
+      # assets
+      ../../articles
       ../../assets
       ../../members
-      ../../articles
       ../../pages
       ../../chain.yaml
       ../../dune-workspace
