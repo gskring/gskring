@@ -2,13 +2,35 @@
 
 @theme {
   --font-sans:
-    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica
-    neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    helvetica,
+    arial,
+    sans-serif;
   --font-serif:
-    Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif,
-    Times, Source Serif Pro, serif;
+    Iowan Old Style,
+    Apple Garamond,
+    Baskerville,
+    Times New Roman,
+    Droid Serif,
+    Times,
+    Source Serif Pro,
+    serif;
   --font-mono:
-    Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    Menlo,
+    Consolas,
+    Monaco,
+    Liberation Mono,
+    Lucida Console,
+    monospace;
   --color-nord-0: #2e3440;
   --color-nord-1: #3b4252;
   --color-nord-2: #434c5e;

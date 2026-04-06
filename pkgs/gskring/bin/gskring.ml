@@ -1,6 +1,5 @@
 let run_build target source log_level =
-  let module Resolver =
-    Gskring.Resolver.Make (struct
+  let module Resolver = Gskring.Resolver.Make (struct
       let source = source
       let target = target
     end)
@@ -9,8 +8,7 @@ let run_build target source log_level =
 ;;
 
 let run_watch target source log_level port =
-  let module Resolver =
-    Gskring.Resolver.Make (struct
+  let module Resolver = Gskring.Resolver.Make (struct
       let source = source
       let target = target
     end)
