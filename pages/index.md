@@ -14,6 +14,14 @@ interests:
     url: https://en.wikipedia.org/wiki/Automated_theorem_proving
   - title: interactive theorem proving
     url: https://en.wikipedia.org/wiki/Proof_assistant
+  - title: build systems
+    url: https://en.wikipedia.org/wiki/Build_automation
+  - title: reproducible builds
+    url: https://reproducible-builds.org/
+  - title: package ecosystems
+    url: https://en.wikipedia.org/wiki/Package_manager
+  - title: Nix
+    url: https://nixos.org/
 ---
 
 Welcome to the [gskr.ing](https://github.com/gskring/) webring. A collection of
