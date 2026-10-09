@@ -1,0 +1,10 @@
+title: "`specialArgs` considered harmful"
+synopsis: "Why `specialArgs` in `lib.evalModules` is considered an antipattern."
+date: 2026-09-28
+authors:
+  - ysun
+link:
+  url: https://ysun.co/special
+tags:
+  - nix
+  - nixos
