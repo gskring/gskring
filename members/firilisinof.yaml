@@ -1,0 +1,12 @@
+id: firilisinof
+display_name: Lucas de Sousa Rosa
+avatar: "firilisinof.avif"
+bio: 唆るぜ、これは
+location: São Paulo, Brazil
+main_link:
+  url: https://firilisinof.com
+main_feed:
+  url: https://firilisinof.com/rss.xml
+additional_links:
+  - title: GitHub
+    url: https://github.com/firilisinof
